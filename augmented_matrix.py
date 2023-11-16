@@ -108,6 +108,8 @@ def check_determinant(matrix):
         return matrix[0][0]
 
 #Use check_determinant in order to return the element in the minor matrix (first two lines of function) 
+# -> This is the only function I needed a little help with and I hope that citing the source will suffice
+# 11.11.23 StackOverflow https://stackoverflow.com/questieterminant-using-python-without-using-scipy-linalg-det
     determinant = 0
     for i in range(len(matrix[0])):
         minor_matrix = []
