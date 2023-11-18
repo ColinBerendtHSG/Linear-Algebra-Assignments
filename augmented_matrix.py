@@ -29,7 +29,7 @@ def get_matrix_and_vector_from_user():
     matrix = []
     rows = int(input("Number of rows: "))
     columns = int(input("Number of columns: "))
-    vector = input(f"Elements for the vector separated by commas: ").split(",")
+    vector = input(f"Elements for the right-hand side (b) separated by commas: ").split(",")
             
     #Check if it is a square matrix
     while rows != columns:
