@@ -22,7 +22,7 @@ def main():
             break
 
         except ValueError:
-            print("Number of vectors do not correspond the number of columns")
+            print("ERROR: Number of vector does not correspond to the number of columns!")
         break
 
 def get_matrix_and_vector_from_user():
@@ -50,7 +50,7 @@ def get_matrix_and_vector_from_user():
             else:
                 print("ERROR: Number of elements in the row do not correspond the number of columns")   
         else:
-            print("Number of elements in the row do not correspond the number of columns")
+            print("ERROR: Number of elements in the row do not correspond the number of columns")
     else:
         raise ValueError
     
