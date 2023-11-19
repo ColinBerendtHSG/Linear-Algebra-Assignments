@@ -79,7 +79,7 @@ def calculate_solution(matrix, vector, decimal_places = 2):
         # Swap the pivot row with the current row
         augmented_matrix[i], augmented_matrix[pivot_row] = augmented_matrix[pivot_row], augmented_matrix[i]
 
-        # Make the diagonal element of the current row equal to 1
+        # Make the diagonal element of the current row equal to 1  -> 10.11.23 ChatGPT for the division at the end
         diagonal_entries = augmented_matrix[i][i]
         for j in range(matrix_size + 1):   #Add 1 because the augemented matrix has one additional column
             augmented_matrix[i][j] /= diagonal_entries
