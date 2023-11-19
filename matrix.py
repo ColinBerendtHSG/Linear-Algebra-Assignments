@@ -75,10 +75,10 @@ def turn_into_inverse(matrix, decimal_places = 2):
         # Swap the pivot row with the current row
         augmented_matrix[i], augmented_matrix[pivot_row] = augmented_matrix[pivot_row], augmented_matrix[i]
 
-        # Make the diagonal element of the current row equal to 1
+        # Make the diagonal element of the current row equal to 1 -> 10.11.23 ChatGPT for the division at the end
         diagonal_entries = augmented_matrix[i][i]
         for j in range(matrix_size * 2):   #Multiply by 2 because the augemented matrix has two times more columns than the original matrix
-            augmented_matrix[i][j] /= diagonal_entries
+            augmented_matrix[i][j] /= diagonal_entries 
 
         # Eliminate other rows
         for j in range(matrix_size):
